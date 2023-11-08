@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 100px;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+body {
+    background: linear-gradient(90deg, #007BFF, #800080, #FF00FF);
+    /* Gradient warna biru, ungu, dan magenta */
+    /* Ganti warna latar belakang */
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.key {
+    border: 3px solid #0077ff;
+    /* Perhalus garis border */
+    background-color: #00e5ff;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+    /* Tingkatkan efek bayangan */
+    display: inline-flex;
+    align-items: center;
+    font-size: 24px;
+    /* Perbesar font size */
+    font-weight: bold;
+    padding: 20px;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 150px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.1s;
+    /* Tambahkan efek transisi */
+}
+
+.key:hover {
+    border: 3px solid #00e5ff;
+    background-color: #007BFF;
+    /* Warna latar belakang saat hover */
+    color: #fff;
+    /* Warna teks saat hover */
+    transform: scale(1.05);
+    /* Efek scaling saat hover */
+}
+
+.key small {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    /* Warna teks kecil yang lebih halus */
+    font-size: 14px;
+}
